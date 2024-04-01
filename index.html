@@ -1,11 +1,78 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"> 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Anna Söderberg Dashboard</title>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <h1>Hello World</h1>
-</body>
+    <div class="background-container">
+        <div  id="backgroundContainer">
+            <img class ="backgroundimg" id="unsplashImage"  src="https://images.unsplash.com/photo-1709817529126-6120fc88bd7d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1ODI4OTd8MHwxfHNlYXJjaHwxNDJ8fHNwcmluZ3xlbnwwfDJ8fHwxNzExMjk2NzUxfDA&ixlib=rb-4.0.3&q=80&w=1080" alt="Default Image">
+        </div>
+        
+        <section class="clock">
+            <div class="TimeDate">
+                <span id="time">10:10:10</span>
+                <span id="date">1 april 2024</span>
+            </div>
+        </section>
+
+
+            <div class="headline">
+                <h1 id="myHeadline" onclick="changeHeadlineText()">
+                    John Doe Dashboard
+                </h1>
+            </div>
+
+        <div id="cards" class="cards">
+            <div class="row">
+                <div class="card">
+                    <div class="contentFastLink">
+                        <h2>Snabblänkar</h2>
+                        <div id="linksContainer">
+                        </div>
+                        <br>
+                        <button id="addLinkBtn" onclick="addLink()">Lägg till Länk</button>
+
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="contentWether">
+                        <h2>Dagens väder</h2>
+                        <div id="weather-container"></div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="content">
+                        <h2>...</h2>
+                        <div></div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="contentNotes">
+                        <h2>Anteckningar</h2>
+                        <textarea id="notesTextarea" name="" id="" cols="40" rows="20"></textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="buttonImg">
+            <button id="changeBackground" onclick="">Tryck gör för att generera en ny bakgrundsbild</button>
+        </div>
+
+    </div>
+
+
+
+
+        <script src="./js/main.js"></script>
+    </body>
+
 </html>
