@@ -1,0 +1,248 @@
+body, html{
+    height: 100%;
+    margin: 0;
+}
+
+.background-container {
+    width: 100vw; 
+    height: 100vh; 
+    background-size: contain; 
+    background-position: center;
+
+    position: relative;
+}
+
+
+#backgroundContainer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; 
+    height: 100%;
+    z-index: -1; 
+    background-size: contain; 
+    background-position: center; 
+}
+
+.backgroundimg{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-size: contain;
+    background-position: center;
+    overflow: hidden;
+}
+
+
+
+
+.clock{      
+    display: flex;
+    justify-content: center;
+    padding: 2rem 30rem;
+}
+
+.clock .TimeDate{
+    background-color: rgb(223, 223, 223);
+    padding: 1rem;
+    border-radius: 1rem;
+    z-index: 1; 
+}
+
+.clock #time, #date{
+    padding: 0.5rem;   
+    z-index: 1;  
+}
+
+.clock #time{
+    font-weight: bold;
+    z-index: 1; 
+}
+
+
+
+
+
+
+
+.headline{
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+}
+
+.buttonImg{
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+}
+
+#changeBackground{
+    background-color: rgb(223, 223, 223);
+    padding: 1rem 3rem;
+    border-radius: 1rem;
+}
+
+#changeBackground:hover{
+    font-weight: bold;
+}
+
+
+.cards{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+
+}
+.cards .row{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    z-index: 1; 
+}
+
+.cards .row .card{
+    height: 25rem;
+    width: 20rem;
+    background-color: rgba(216, 216, 216, 0.7);
+    text-align: center;
+    margin: 7rem 2rem;
+    position: center;
+    overflow: hidden;
+    border-radius: 2rem;
+    z-index: 1; 
+}
+
+.cards .row .card textarea{
+    background-color: rgba(216, 216, 216, 0.7);
+}
+
+
+
+
+
+
+
+
+/* Style for link container */
+.link-container {
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
+    margin-bottom: 5px; 
+    background-color: rgb(216, 216, 216);
+    border-radius: 8px;
+    margin:0 15px 10px 15px;
+    padding: 10px;
+
+}
+
+/* Style for links */
+#linksContainer a {
+    color: #2e2e2e; 
+    text-decoration: none;
+    padding: 1rem ;
+}
+
+#linksContainer a:hover {
+    display: flex;
+    justify-content: flex-start;
+    text-decoration: underline;
+    
+}
+
+/* Style for delete buttons */
+#linksContainer button {
+    display: flex;
+    justify-content: flex-end;
+    background-color: rgba(216, 216, 216, 0.7);
+    color: rgb(15, 15, 58);
+    padding: 0px 5px;
+    margin-left: auto;
+    cursor: pointer;
+    border-radius: 50% ;
+}
+
+
+
+
+
+
+/* styles for weather data */
+.weather-card {
+    background-color: #ccc;
+    border-radius: 8px;
+    margin:0 15px 10px 15px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.weatherInfo{
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-right: 20px;
+}
+
+
+.weather-card h4 {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 18px;
+    margin-top: 0;
+
+}
+
+.weather-card p {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: end;
+    background-color: rgba(236, 235, 235, 0.7);
+    margin: 5px 0;
+    border-radius: 4px;
+    padding: 4px;
+}
+
+.p-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+    gap:10px;
+}
+
+.weatherIcon{
+    display: flex;
+    align-items:center;
+    justify-content: flex-start;
+    margin: 0 auto;
+    padding-right: 2rem;
+    padding-left: 0;
+    width: 70px;
+    margin-left: 2px;
+}
+
+/* style for notes*/
+#notesTextarea{
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+
+#addLinkBtn{
+    padding: 0.5rem 1rem;
+    background-color: rgba(134, 134, 134, 0.7);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
